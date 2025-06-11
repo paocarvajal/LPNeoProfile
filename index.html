@@ -64,14 +64,10 @@
             margin: 0 auto 2rem auto;
         }
         .header-logo {
-            height: 70px; /* Aumentado el tamaño del logo en la cabecera */
+            height: 65px; /* Ajustado el tamaño del logo en la cabecera */
             width: auto;
-            /* Se elimina el filtro invert() si el logo ya es blanco/transparente o es oscuro y queremos que se vea oscuro */
-            /* Si el logo es verde oscuro sobre transparente y queremos que se vea blanco: filter: invert(100%); */
-            /* Si el logo es blanco sobre transparente y queremos que se vea blanco: filter: none; */
-            /* Usamos Transparent Logo Verde con fondo blanco.png que tiene líneas verdes y fondo transparente,
-               y con filter: invert(100%) se hará blanco sobre el header oscuro */
-            filter: invert(100%); 
+            /* Se elimina el filtro invert() porque el logo ya es blanco sobre un fondo oscuro */
+            filter: none; 
         }
         .feature-icon-img {
             height: 5rem; /* Adjust size as needed for icon images */
@@ -101,7 +97,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo en la esquina superior izquierda -->
             <a href="#hero" class="flex items-center">
-                <img src="Transparent Logo Verde con fondo blanco.png" alt="NeoProfile Logo" class="header-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x70/4A6D6A/FFFFFF?text=NeoProfile+Logo';">
+                <img src="Original Logo Blanco con fondo Verde.png" alt="NeoProfile Logo" class="header-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x65/4A6D6A/FFFFFF?text=NeoProfile+Logo';">
             </a>
             <nav class="space-x-6 hidden md:block">
                 <a href="#features" class="nav-link text-lg">Beneficios</a>
