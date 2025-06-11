@@ -64,10 +64,10 @@
             margin: 0 auto 2rem auto;
         }
         .header-logo {
-            height: 50px; /* Aumentado el tamaño del logo en la cabecera */
+            height: 60px; /* Aumentado aún más el tamaño del logo en la cabecera */
             width: auto;
-            /* Aplicar filtro invert(100%) para que un logo oscuro se vea blanco sobre un fondo oscuro */
-            filter: invert(100%); 
+            /* Se elimina el filtro invert() ya que el logo ya es blanco sobre verde oscuro */
+            filter: none; 
         }
         .feature-icon-img {
             height: 5rem; /* Adjust size as needed for icon images */
@@ -97,7 +97,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo en la esquina superior izquierda -->
             <a href="#hero" class="flex items-center">
-                <img src="Transparent Logo Verde con fondo blanco.png" alt="NeoProfile Logo" class="header-logo" onerror="this.onerror=null;this.src='https://placehold.co/180x50/4A6D6A/FFFFFF?text=NeoProfile+Logo';">
+                <img src="Original Logo Blanco con fondo Verde.png" alt="NeoProfile Logo" class="header-logo" onerror="this.onerror=null;this.src='https://placehold.co/180x60/4A6D6A/FFFFFF?text=NeoProfile+Logo';">
             </a>
             <nav class="space-x-6 hidden md:block">
                 <a href="#features" class="nav-link text-lg">Beneficios</a>
