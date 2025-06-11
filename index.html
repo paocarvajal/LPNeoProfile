@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeoProfile - Tu Aliado en Perfiles de PVC</title>
-    <script src="https://cdn.tailwindcss.com"></script> 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #D2DFDD; /* Color de fondo general más claro */ 
+            background-color: #D2DFDD; /* Color de fondo general más claro */
             color: #333;
         }
         .text-brand-primary { color: #4A6D6A; } /* Dark teal/slate green */
@@ -66,6 +66,7 @@
         .header-logo {
             height: 65px; /* Tamaño del logo en la cabecera */
             width: auto;
+            filter: invert(100%); /* Invierte el color del logo (verde a blanco) para que se vea en la cabecera oscura */
         }
         .feature-icon-img {
             height: 5rem; /* Adjust size as needed for icon images */
@@ -89,15 +90,16 @@
     </style>
 </head>
 <body class="leading-relaxed">
+
     <!-- Header & Navigation -->
     <header class="bg-brand-primary text-white p-4 shadow-md sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo en la esquina superior izquierda -->
+            <!-- Logo en la esquina superior izquierda (ahora PNG y con filtro invert) -->
             <a href="#hero" class="flex items-center">
-                <img src="NeoProfile_Logo_Blanco.png" alt="NeoProfile Logo" class="header-logo" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x65/FFFFFF?text=NeoProfile+Logo';">
+                <img src="Transparent Logo Verde con fondo blanco.png" alt="NeoProfile Logo" class="header-logo" onerror="this.onerror=null;this.src='https://placehold.co/200x65/4A6D6A/FFFFFF?text=NeoProfile+Logo';">
             </a>
             <nav class="space-x-6 hidden md:block">
-                <a href="#features" class="nav-link text-lg">Beneficios</a> 
+                <a href="#features" class="nav-link text-lg">Beneficios</a>
                 <a href="#products" class="nav-link text-lg">Productos</a>
                 <a href="#services" class="nav-link text-lg">Servicios</a>
                 <a href="#projects" class="nav-link text-lg">Proyectos</a>
@@ -184,6 +186,7 @@
                           <option value="consulta_general">Consulta General</option>
                         </select>
                     </div>
+                    
                     <div>
                         <label class="block text-left text-sm font-semibold mb-2" for="name">Nombre:</label>
                         <input type="text" id="name" name="Nombre" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" required />
@@ -212,6 +215,7 @@
                         <label class="block text-left text-sm font-semibold mb-2" for="message">Tu Mensaje:</label>
                         <textarea id="message" name="Mensaje" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" required></textarea>
                     </div>
+                    
                     <div class="col-span-full text-left">
                         <div class="flex items-start">
                             <input class="h-4 w-4 text-brand-primary focus:ring-brand-primary border-gray-300 rounded mt-1" id="dpa-consent" name="Consentimiento_Datos" required type="checkbox" value="consent" />
@@ -220,6 +224,7 @@
                             </label>
                         </div>
                     </div>
+
                     <div class="col-span-full fs-button-group">
                         <button type="submit" class="btn-main bg-brand-primary text-white w-full hover:bg-brand-accent">Enviar Solicitud</button>
                     </div>
@@ -233,10 +238,11 @@
         <div class="container mx-auto">
             <p class="mb-2">&copy; 2025 NeoProfile S.A. de C.V. Todos los derechos reservados.</p>
             <p>
-                <a href="#" class="hover:underline">Aviso de Privacidad</a> |  
+                <a href="#" class="hover:underline">Aviso de Privacidad</a> | 
                 <a href="#" class="hover:underline">Términos y Condiciones</a>
             </p>
         </div>
     </footer>
+
 </body>
 </html>
