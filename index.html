@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #EBEBEB; /* Light gray from palette */
+            background-color: #D2DFDD; /* Color de fondo general más claro */
             color: #333;
         }
         .text-brand-primary { color: #4A6D6A; } /* Dark teal/slate green */
@@ -58,10 +58,10 @@
             max-width: 900px;
             padding: 1rem;
         }
-        .logo-placeholder {
-            max-width: 250px; /* Adjust as needed */
-            height: auto;
-            margin: 0 auto 2rem auto;
+        .header-logo {
+            height: 40px; /* Tamaño del logo en la cabecera */
+            width: auto;
+            filter: invert(100%); /* Intenta hacer blanco un logo oscuro */
         }
         .feature-icon-img {
             height: 5rem; /* Adjust size as needed for icon images */
@@ -89,13 +89,16 @@
     <!-- Header & Navigation -->
     <header class="bg-brand-primary text-white p-4 shadow-md sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#hero" class="text-3xl font-extrabold tracking-wide uppercase">NeoProfile</a>
+            <!-- Logo en la esquina superior izquierda -->
+            <a href="#hero" class="flex items-center">
+                <img src="Original Logo Verde con fondo blanco.png" alt="NeoProfile Logo" class="header-logo" onerror="this.onerror=null;this.src='https://placehold.co/150x40/4A6D6A/FFFFFF?text=NeoProfile+Logo';">
+            </a>
             <nav class="space-x-6 hidden md:block">
-                <a href="#about" class="nav-link text-lg">Nosotros</a>
+                <a href="#features" class="nav-link text-lg">Beneficios</a>
                 <a href="#products" class="nav-link text-lg">Productos</a>
                 <a href="#services" class="nav-link text-lg">Servicios</a>
                 <a href="#projects" class="nav-link text-lg">Proyectos</a>
-                <a href="#contact" class="nav-link text-lg">Contacto</a>
+                <a href="#contact-form" class="nav-link text-lg">Contacto</a>
             </nav>
             <button class="md:hidden text-white text-2xl focus:outline-none">☰</button>
         </div>
@@ -105,9 +108,7 @@
     <section class="hero-section" style="background-image: url('hero-background.jpg.jpeg');">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <!-- NeoProfile Logo -->
-            <img src="Original Logo Blanco con fondo Verde.png" alt="NeoProfile Logo" class="logo-placeholder" onerror="this.onerror=null;this.src='https://placehold.co/250x80/4A6D6A/FFFFFF?text=NeoProfile+Logo+Fallback';">
-
+            <!-- Título principal -->
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">
                 Perfiles de PVC de Calidad Premium
             </h1>
@@ -120,7 +121,7 @@
             <a href="#contact-form" class="btn-main bg-brand-accent text-white hover:bg-opacity-90">
                 Solicitar Cotización
             </a>
-            <a href="#about-us" class="btn-main bg-white text-brand-primary border-2 border-brand-primary ml-4 hover:bg-gray-100">
+            <a href="#features" class="btn-main bg-white text-brand-primary border-2 border-brand-primary ml-4 hover:bg-gray-100">
                 Conoce Más
             </a>
         </div>
