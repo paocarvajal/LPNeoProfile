@@ -86,12 +86,27 @@
 </head>
 <body class="leading-relaxed">
 
+    <!-- Header & Navigation -->
+    <header class="bg-brand-primary text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#hero" class="text-3xl font-extrabold tracking-wide uppercase">NeoProfile</a>
+            <nav class="space-x-6 hidden md:block">
+                <a href="#about" class="nav-link text-lg">Nosotros</a>
+                <a href="#products" class="nav-link text-lg">Productos</a>
+                <a href="#services" class="nav-link text-lg">Servicios</a>
+                <a href="#projects" class="nav-link text-lg">Proyectos</a>
+                <a href="#contact" class="nav-link text-lg">Contacto</a>
+            </nav>
+            <button class="md:hidden text-white text-2xl focus:outline-none">☰</button>
+        </div>
+    </header>
+
     <!-- Hero Section -->
-    <section class="hero-section" style="background-image: url('hero-background.jpg');">
+    <section class="hero-section" style="background-image: url('hero-background.jpg.jpeg');">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <!-- NeoProfile Logo -->
-            <img src="Original Logo Blanco con fondo Verde.png-abe4b7e3-ae80-4845-bff2-38f7793d6969" alt="NeoProfile Logo" class="logo-placeholder">
+            <img src="Original Logo Blanco con fondo Verde.png" alt="NeoProfile Logo" class="logo-placeholder" onerror="this.onerror=null;this.src='https://placehold.co/250x80/4A6D6A/FFFFFF?text=NeoProfile+Logo+Fallback';">
 
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">
                 Perfiles de PVC de Calidad Premium
@@ -117,7 +132,7 @@
             <h2 class="text-3xl md:text-4xl font-bold text-brand-primary mb-12">¿Por Qué Elegir NeoProfile?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div class="p-8 rounded-lg shadow-lg border-t-4 border-brand-accent">
-                    <img src="image_ca1675.jpg" alt="Perfil de PVC Veratec" class="feature-icon-img">
+                    <img src="image_ca1675.jpg" alt="Perfil de PVC Veratec" class="feature-icon-img" onerror="this.onerror=null;this.src='https://placehold.co/80x80/4A6D6A/FFFFFF?text=PVC';">
                     <h3 class="text-xl font-bold mb-3">Calidad Premium VERATEC</h3>
                     <p class="text-gray-700">Importamos directamente los perfiles de PVC de más alta calidad de VERATEC, garantizando durabilidad, aislamiento y estética superior.</p>
                 </div>
@@ -177,31 +192,31 @@
                     </div>
                     <div>
                         <label class="block text-left text-sm font-semibold mb-2" for="name">Nombre:</label>
-                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="name" name="Nombre" required />
+                        <input type="text" id="name" name="Nombre" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" required />
                     </div>
                     <div>
                         <label class="block text-left text-sm font-semibold mb-2" for="apellido">Apellido:</label>
-                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="apellido" name="Apellido" required />
+                        <input type="text" id="apellido" name="Apellido" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" required />
                     </div>
                     <div class="col-span-full">
                         <label class="block text-left text-sm font-semibold mb-2" for="email">Correo Electrónico:</label>
-                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="email" name="Correo Electrónico" required />
+                        <input type="email" id="email" name="Correo Electrónico" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" required />
                     </div>
                     <div>
                         <label class="block text-left text-sm font-semibold mb-2" for="company">Empresa:</label>
-                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="company" name="Empresa" required />
+                        <input type="text" id="company" name="Empresa" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" required />
                     </div>
                     <div>
                         <label class="block text-left text-sm font-semibold mb-2" for="country">País:</label>
-                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="country" name="País" required />
+                        <input type="text" id="country" name="País" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" required />
                     </div>
                     <div>
                         <label class="block text-left text-sm font-semibold mb-2" for="phone-number">Teléfono:</label>
-                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="phone-number" name="Teléfono" />
+                        <input type="tel" id="phone-number" name="Teléfono" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary">
                     </div>
                     <div class="col-span-full">
                         <label class="block text-left text-sm font-semibold mb-2" for="message">Tu Mensaje:</label>
-                        <textarea class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="message" name="Mensaje" required></textarea>
+                        <textarea id="message" name="Mensaje" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" required></textarea>
                     </div>
                     
                     <div class="col-span-full text-left">
@@ -214,7 +229,7 @@
                     </div>
 
                     <div class="col-span-full fs-button-group">
-                        <button class="btn-main bg-brand-primary text-white w-full hover:bg-brand-accent" type="submit">Enviar Solicitud</button>
+                        <button type="submit" class="btn-main bg-brand-primary text-white w-full hover:bg-brand-accent">Enviar Solicitud</button>
                     </div>
                 </form>
             </div>
