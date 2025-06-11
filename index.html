@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoProfile - Tu Aliado en Perfiles de PVC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #EBEBEB; /* Light gray from palette */
+            color: #333;
+        }
+        .text-brand-primary { color: #4A6D6A; } /* Dark teal/slate green */
+        .bg-brand-primary { background-color: #4A6D6A; }
+        .border-brand-primary { border-color: #4A6D6A; }
+        .text-brand-accent { color: #333333; } /* Dark charcoal/black */
+        .bg-brand-accent { background-color: #333333; }
+        .btn-main {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn-main:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+        }
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh;
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5); /* Semi-transparent overlay for text readability */
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            max-width: 900px;
+            padding: 1rem;
+        }
+        .logo-placeholder {
+            max-width: 250px; /* Adjust as needed */
+            height: auto;
+            margin: 0 auto 2rem auto;
+        }
+        .feature-icon-img {
+            height: 5rem; /* Adjust size as needed for icon images */
+            width: auto;
+            margin: 0 auto 1rem auto;
+        }
+        /* Custom styles for the Formspree form to align with Tailwind */
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        @media (min-width: 640px) { /* Tailwind's 'sm' breakpoint */
+            .form-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .col-span-full {
+                grid-column: span 2 / span 2;
+            }
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('hero-background.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- NeoProfile Logo -->
+            <img src="Original Logo Blanco con fondo Verde.png-abe4b7e3-ae80-4845-bff2-38f7793d6969" alt="NeoProfile Logo" class="logo-placeholder">
+
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">
+                Perfiles de PVC de Calidad Premium
+            </h1>
+            <p class="text-xl md:text-3xl font-light mb-8 italic">
+                "Enduring quality, proven experience."
+            </p>
+            <p class="text-lg md:text-xl mb-10">
+                Somos tu aliado estratégico para transformar proyectos de ventanas y puertas con la más alta calidad y tecnología.
+            </p>
+            <a href="#contact-form" class="btn-main bg-brand-accent text-white hover:bg-opacity-90">
+                Solicitar Cotización
+            </a>
+            <a href="#about-us" class="btn-main bg-white text-brand-primary border-2 border-brand-primary ml-4 hover:bg-gray-100">
+                Conoce Más
+            </a>
+        </div>
+    </section>
+
+    <!-- Features/Why Choose Us Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-primary mb-12">¿Por Qué Elegir NeoProfile?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="p-8 rounded-lg shadow-lg border-t-4 border-brand-accent">
+                    <img src="image_ca1675.jpg" alt="Perfil de PVC Veratec" class="feature-icon-img">
+                    <h3 class="text-xl font-bold mb-3">Calidad Premium VERATEC</h3>
+                    <p class="text-gray-700">Importamos directamente los perfiles de PVC de más alta calidad de VERATEC, garantizando durabilidad, aislamiento y estética superior.</p>
+                </div>
+                <div class="p-8 rounded-lg shadow-lg border-t-4 border-brand-accent">
+                    <div class="text-5xl text-brand-primary mb-4">👨‍🔧</div>
+                    <h3 class="text-xl font-bold mb-3">Experiencia y Soporte</h3>
+                    <p class="text-gray-700">Nuestro equipo con décadas de experiencia te ofrece asesoría técnica y logística, asegurando que cada proyecto sea un éxito.</p>
+                </div>
+                <div class="p-8 rounded-lg shadow-lg border-t-4 border-brand-accent">
+                    <div class="text-5xl text-brand-primary mb-4">💡</div>
+                    <h3 class="text-xl font-bold mb-3">Innovación y Eficiencia</h3>
+                    <p class="text-gray-700">Trabajamos con materiales de vanguardia y procesos optimizados para ofrecerte soluciones que impulsan tu competitividad y sostenibilidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact Form Section -->
+    <section id="contact-form" class="py-16 md:py-24 bg-brand-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Impulsa Tu Próximo Proyecto</h2>
+            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                Estamos listos para ser tu aliado estratégico. Completa el formulario y un experto de NeoProfile se pondrá en contacto contigo a la brevedad.
+            </p>
+            <div class="bg-white text-gray-800 p-8 md:p-10 rounded-lg shadow-xl max-w-xl mx-auto">
+                <form action="https://formspree.io/f/manjoqny" method="POST" class="form-grid">
+                    <div class="col-span-full">
+                        <label class="block text-left text-sm font-semibold mb-2" for="business-area">Área de Negocio:</label>
+                        <select class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="business-area" name="Área de Negocio" required>
+                          <option value="">Selecciona una opción</option>
+                          <option value="perfiles_ventanas">Perfiles para Ventanas</option>
+                          <option value="perfiles_puertas">Perfiles para Puertas</option>
+                          <option value="soporte_tecnico">Soporte Técnico</option>
+                          <option value="logistica">Logística y Envíos</option>
+                          <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <div class="col-span-full">
+                        <label class="block text-left text-sm font-semibold mb-2" for="request-type">Tipo de Solicitud:</label>
+                        <select class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="request-type" name="Tipo de Solicitud" required>
+                          <option value="">Selecciona una opción</option>
+                          <option value="consulta_producto">Consulta de Producto</option>
+                          <option value="cotizacion">Solicitud de Cotización</option>
+                          <option value="compra">Realizar Pedido</option>
+                          <option value="asistencia_tecnica">Asistencia Técnica</option>
+                          <option value="consulta_general">Consulta General</option>
+                        </select>
+                    </div>
+                    <div class="col-span-full">
+                        <label class="block text-left text-sm font-semibold mb-2" for="title">Título:</label>
+                        <select class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="title" name="Título" required>
+                          <option value="Sr.">Sr.</option>
+                          <option value="Sra.">Sra.</option>
+                          <option value="Srita.">Srita.</option>
+                          <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-left text-sm font-semibold mb-2" for="name">Nombre:</label>
+                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="name" name="Nombre" required />
+                    </div>
+                    <div>
+                        <label class="block text-left text-sm font-semibold mb-2" for="apellido">Apellido:</label>
+                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="apellido" name="Apellido" required />
+                    </div>
+                    <div class="col-span-full">
+                        <label class="block text-left text-sm font-semibold mb-2" for="email">Correo Electrónico:</label>
+                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="email" name="Correo Electrónico" required />
+                    </div>
+                    <div>
+                        <label class="block text-left text-sm font-semibold mb-2" for="company">Empresa:</label>
+                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="company" name="Empresa" required />
+                    </div>
+                    <div>
+                        <label class="block text-left text-sm font-semibold mb-2" for="country">País:</label>
+                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="country" name="País" required />
+                    </div>
+                    <div>
+                        <label class="block text-left text-sm font-semibold mb-2" for="phone-number">Teléfono:</label>
+                        <input class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="phone-number" name="Teléfono" />
+                    </div>
+                    <div class="col-span-full">
+                        <label class="block text-left text-sm font-semibold mb-2" for="message">Tu Mensaje:</label>
+                        <textarea class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="message" name="Mensaje" required></textarea>
+                    </div>
+                    
+                    <div class="col-span-full text-left">
+                        <div class="flex items-start">
+                            <input class="h-4 w-4 text-brand-primary focus:ring-brand-primary border-gray-300 rounded mt-1" id="dpa-consent" name="Consentimiento_Datos" required type="checkbox" value="consent" />
+                            <label class="ml-2 block text-sm text-gray-700" for="dpa-consent">
+                                Declaro haber leído y aceptado la Política de Privacidad de NeoProfile S.A. de C.V. y consiento el tratamiento de mis datos para responder a mi solicitud.
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-span-full fs-button-group">
+                        <button class="btn-main bg-brand-primary text-white w-full hover:bg-brand-accent" type="submit">Enviar Solicitud</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-accent text-white py-8 px-4 text-center">
+        <div class="container mx-auto">
+            <p class="mb-2">&copy; 2025 NeoProfile S.A. de C.V. Todos los derechos reservados.</p>
+            <p>
+                <a href="#" class="hover:underline">Aviso de Privacidad</a> | 
+                <a href="#" class="hover:underline">Términos y Condiciones</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
