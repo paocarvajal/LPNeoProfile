@@ -58,10 +58,16 @@
             max-width: 900px;
             padding: 1rem;
         }
+        .logo-placeholder {
+            max-width: 250px; /* Adjust as needed */
+            height: auto;
+            margin: 0 auto 2rem auto;
+        }
         .header-logo {
-            height: 40px; /* Tamaño del logo en la cabecera */
+            height: 50px; /* Aumentado el tamaño del logo en la cabecera */
             width: auto;
-            filter: invert(100%); /* Intenta hacer blanco un logo oscuro */
+            /* Aplicar filtro invert(100%) para que un logo oscuro se vea blanco sobre un fondo oscuro */
+            filter: invert(100%); 
         }
         .feature-icon-img {
             height: 5rem; /* Adjust size as needed for icon images */
@@ -91,7 +97,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo en la esquina superior izquierda -->
             <a href="#hero" class="flex items-center">
-                <img src="Original Logo Verde con fondo blanco.png" alt="NeoProfile Logo" class="header-logo" onerror="this.onerror=null;this.src='https://placehold.co/150x40/4A6D6A/FFFFFF?text=NeoProfile+Logo';">
+                <img src="Transparent Logo Verde con fondo blanco.png" alt="NeoProfile Logo" class="header-logo" onerror="this.onerror=null;this.src='https://placehold.co/180x50/4A6D6A/FFFFFF?text=NeoProfile+Logo';">
             </a>
             <nav class="space-x-6 hidden md:block">
                 <a href="#features" class="nav-link text-lg">Beneficios</a>
@@ -164,8 +170,7 @@
                         <label class="block text-left text-sm font-semibold mb-2" for="business-area">Área de Negocio:</label>
                         <select class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="business-area" name="Área de Negocio" required>
                           <option value="">Selecciona una opción</option>
-                          <option value="perfiles_ventanas">Perfiles para Ventanas</option>
-                          <option value="perfiles_puertas">Perfiles para Puertas</option>
+                          <option value="perfiles_puertas_ventanas">Perfiles para Puertas y Ventanas</option>
                           <option value="soporte_tecnico">Soporte Técnico</option>
                           <option value="logistica">Logística y Envíos</option>
                           <option value="otros">Otros</option>
@@ -182,15 +187,7 @@
                           <option value="consulta_general">Consulta General</option>
                         </select>
                     </div>
-                    <div class="col-span-full">
-                        <label class="block text-left text-sm font-semibold mb-2" for="title">Título:</label>
-                        <select class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" id="title" name="Título" required>
-                          <option value="Sr.">Sr.</option>
-                          <option value="Sra.">Sra.</option>
-                          <option value="Srita.">Srita.</option>
-                          <option value="Otro">Otro</option>
-                        </select>
-                    </div>
+                    
                     <div>
                         <label class="block text-left text-sm font-semibold mb-2" for="name">Nombre:</label>
                         <input type="text" id="name" name="Nombre" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" required />
